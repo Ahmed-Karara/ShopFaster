@@ -44,12 +44,6 @@ const FilteredProducts = () => {
               : product.name.toLowerCase().includes(name.toLowerCase())
           )}
         />
-        {product.map((product) =>
-          name.toLowerCase() ===
-          product.name.toLowerCase().includes(name.toLowerCase())
-            ? console.log("true")
-            : console.log(product.name)
-        )}
       </div>
 
       <div className={name !== "" ? "d-none" : ""}>
