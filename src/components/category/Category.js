@@ -32,7 +32,7 @@ const Category = () => {
         <h2 className="text-center fw-bold  mb-4">Categories</h2>
         <motion.div
           className="category"
-          initial={{ opacity: 0.3, y: "-20vh" }}
+          initial={{ opacity: 0, y: "-30vh" }}
           animate={animation}
           transition={{ duration: 0.5 }}
         >
