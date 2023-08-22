@@ -35,8 +35,7 @@ const FilteredProducts = () => {
           />
         </div>
       </div>
-      <div className={name.length < 0 ? "d-none" : ""}>
-        {/*   <h2 className="text-muted mt-3">Search Result</h2> */}
+      <div className={name ? "" : "d-none"}>
         <ProductCard
           product={product.filter((product) =>
             name.toLowerCase() === product.name.toLowerCase().includes(name)
