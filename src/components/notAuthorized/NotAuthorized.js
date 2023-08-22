@@ -13,7 +13,7 @@ const NotAuthorized = () => {
       <div className="p-3">
         <h1 className="text-dark mb-3"> Error 401 No Authorization </h1>
         <h4 className="text-muted">
-          Opps... you are not authoriz view to this page.
+          Opps... you are not authorized view to this page.
           <br />
           it's either you are not an admin or you are viewing this page from
           tablet or mobile.
