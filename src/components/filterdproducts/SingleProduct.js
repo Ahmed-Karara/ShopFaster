@@ -107,7 +107,9 @@ const SingleProduct = () => {
                     >
                       ${product.price - (product.price * product.sale) / 100}
                     </h3>
-                    <span className="h5 text-danger">
+                    <span
+                      className={product.sale > 0 ? "h5 text-danger" : "d-none"}
+                    >
                       ({product.sale}% off)
                     </span>
                   </div>
