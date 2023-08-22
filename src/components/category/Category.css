@@ -1,0 +1,84 @@
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.options h2 {
+  margin-top: 80px;
+}
+
+.options .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category button {
+  width: 110px;
+  height: 35px;
+  background: var(--color-white);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+.category button:hover {
+  background: var(--color-primary);
+  color: var(--color-white) !important;
+}
+
+.options .search {
+  width: 280px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid var(--color-gray);
+  background: var(--color-white);
+  margin: 20px 0;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search input {
+  width: 210px;
+  height: 25px;
+  border: none;
+  border-right: 1px solid var(--color-gray);
+  outline: none;
+}
+
+.search div {
+  border-right: 1px transparent;
+  border-radius: 0px 20px 20px 0px;
+  width: 50px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.search div:hover {
+  background: var(--light-gray);
+}
+
+.options .filter {
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 5px;
+  background: var(--color-white);
+  animation: fade 0.9s ease-out;
+  border: 1px solid var(--color-gray);
+  text-align: center;
+}
