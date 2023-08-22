@@ -52,7 +52,7 @@ function App() {
         <ToastContainer />
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/login" element={<Login />} />
