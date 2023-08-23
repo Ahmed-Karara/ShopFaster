@@ -71,7 +71,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/notAuthorized" element={<NotAuthorized />} />
           <Route path="/404notFound" element={<NotFound />} />
-          <Route path="*" element={<Navigate to="/404notFound" />} />
+          <Route path="/*" element={<Navigate to="/404notFound" />} />
           <Route path="/my-orders" element={<MyOrders />} />
         </Routes>
         <Footer />
