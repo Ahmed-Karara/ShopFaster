@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { oneProduct } from "../../redux/features/ProductSlice";
 import { useNavigate } from "react-router-dom";
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { AddToCart } from "../../redux/features/CartSlice";
 import { selectedUser } from "../../redux/features/AuthSlice";
@@ -153,21 +153,20 @@ const SingleProduct = () => {
                   <hr className="w-100 p-2" />
                   <h5>Product details:</h5>
                   <p className="text-black">{product.details}</p>
-                  <div className="w-75 d-flex gap-5 add-cart">
-                    <Button
-                      className=""
+                  <div className="w-100 d-flex flex-wrap gap-5 add-cart">
+                    <button
                       onClick={() => addToCart(product)}
                       disabled={count <= 0 ? true : false}
                     >
                       Add To Cart
-                    </Button>
+                    </button>
 
-                    <Button
-                      className={!viewCart ? "d-none" : "  w-25"}
+                    <button
+                      className={!viewCart ? "d-none" : ""}
                       onClick={() => navigate("/cart")}
                     >
                       View Cart
-                    </Button>
+                    </button>
                   </div>
                 </div>
               </Col>

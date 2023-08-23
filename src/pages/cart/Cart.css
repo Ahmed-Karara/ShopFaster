@@ -262,8 +262,8 @@ button:hover {
     content: "quantity:";
   }
 
-  .item .total::before {
-    content: "subtotal:";
+  .item .sub-total::before {
+    content: "sub total:";
   }
 
   .total {

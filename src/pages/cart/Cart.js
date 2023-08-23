@@ -132,7 +132,7 @@ const Cart = () => {
               <div className="price">
                 <span>${item.sale > 0 ? salePrice : item.price}</span>
               </div>
-              <div className="price total">
+              <div className="price sub-total">
                 <span>
                   $
                   {item.sale > 0
@@ -141,13 +141,18 @@ const Cart = () => {
                 </span>
               </div>
               <div className="option">
-                <button onClick={() => dispatch(RemoveFromCart(item))}>
+                <button
+                  onClick={() => {
+                    dispatch(RemoveFromCart(item));
+                    toast.success("item was removed successfully");
+                  }}
+                >
                   Remove item
                 </button>
                 <button
                   onClick={() => {
                     dispatch(RemoveAll(item));
-                    toast.success("item was removed successfully");
+                    toast.success("items was removed successfully");
                   }}
                   className={item.quantity === 1 ? "d-none" : ""}
                 >
@@ -166,7 +171,7 @@ const Cart = () => {
             <span>{userItems.quantity}</span>
           </div>
           <div>
-            <p>SubTotal</p>
+            <p className="mt-3">SubTotal</p>
             <span>${userItems.totalPrice}</span>
           </div>
           <button
@@ -176,7 +181,13 @@ const Cart = () => {
             Proceed to checkout
           </button>
         </div>
-        <button className="clear-cart" onClick={() => clearCart()}>
+        <button
+          className="clear-cart"
+          onClick={() => {
+            clearCart();
+            toast.success("Your cart was cleared successfully");
+          }}
+        >
           Clear Cart
         </button>
       </div>
