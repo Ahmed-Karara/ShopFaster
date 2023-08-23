@@ -173,3 +173,24 @@ input::-webkit-inner-spin-button {
     left: -4%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .single-product .sale-img {
+    top: -1.7%;
+    left: -5.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .single-product .sale-img {
+    top: -2.3%;
+    left: -6.5%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .single-product .sale-img {
+    top: -2.4%;
+    left: -8.5%;
+  }
+}
