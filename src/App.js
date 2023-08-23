@@ -1,10 +1,10 @@
 import "./App.css";
 import {
-  BrowserRouter,
   Routes,
   Route,
   useLocation,
   Navigate,
+  HashRouter,
 } from "react-router-dom";
 import {
   Home,
@@ -47,35 +47,35 @@ function App() {
   }, [cartItems]);
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollTop />
         <ToastContainer />
         <Header />
         <Routes>
-          <Route index path="/home" element={<Home />} />
-          <Route path="/home/product" element={<Product />} />
-          <Route path="/home/contactUs" element={<ContactUs />} />
-          <Route path="/home/login" element={<Login />} />
-          <Route path="/home/signUp" element={<SignUp />} />
-          <Route path="/home/reset" element={<Reset />} />
-          <Route path="/home/admin" element={<Admin />} />
+          <Route path="/*" element={<Home />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/reset" element={<Reset />} />
+          <Route path="/product" element={<Product />} />
           <Route
-            path="/home/filteredProducts/:category"
+            path="/filteredProducts/:category"
             element={<FilteredProducts />}
           />
           <Route
-            path="/home/singleProduct/:category/:id"
+            path="/singleProduct/:category/:id"
             element={<SingleProduct />}
           />
-          <Route path="/home/cart" element={<Cart />} />
-          <Route path="/home/payment" element={<Payment />} />
-          <Route path="/home/my-orders" element={<MyOrders />} />
-          <Route path="/home/notAuthorized" element={<NotAuthorized />} />
-          <Route path="/home/404notFound" element={<NotFound />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/notAuthorized" element={<NotAuthorized />} />
+          <Route path="/404notFound" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/404notFound" />} />
+          <Route path="/my-orders" element={<MyOrders />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
