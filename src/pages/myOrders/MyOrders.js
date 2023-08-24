@@ -5,8 +5,11 @@ import "./MyOrders.css";
 const MyOrders = () => {
   const navigate = useNavigate();
   return (
-    <div className="d-flex flex-column align-items-center gap-4 text-muted text-center">
-      <span className="text-muted mt-5" style={{ fontSize: "50px" }}>
+    <div
+      style={{ height: "80vh" }}
+      className="d-flex flex-column align-items-center mt-4 gap-5 text-muted text-center"
+    >
+      <span className="text-muted mt-5" style={{ fontSize: "70px" }}>
         in progress...
       </span>
       <h4 className="">
