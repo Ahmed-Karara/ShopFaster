@@ -50,7 +50,7 @@ const Footer = () => {
         </motion.div>
         <div className="us">
           <motion.h1
-            initial={{ x: "20vh", opacity: 0 }}
+            initial={{ x: "-20vh", opacity: 0 }}
             animate={animate}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
