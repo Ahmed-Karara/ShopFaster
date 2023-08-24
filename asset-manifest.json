@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ShopFaster/static/css/main.92126411.css",
-    "main.js": "/ShopFaster/static/js/main.5deb55a0.js",
+    "main.js": "/ShopFaster/static/js/main.4939aeeb.js",
     "static/media/sale.jpg": "/ShopFaster/static/media/sale.ff64a9fb2b4d00444654.jpg",
     "static/media/nintendo switch.png": "/ShopFaster/static/media/nintendo switch.8dfdf02ed810a117ec5c.png",
     "static/media/LG-UHD-TV-UR80.jpg": "/ShopFaster/static/media/LG-UHD-TV-UR80.efb1f0c403bc1cbbb90b.jpg",
@@ -45,10 +45,10 @@
     "static/media/revicons.woff": "/ShopFaster/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/ShopFaster/index.html",
     "main.92126411.css.map": "/ShopFaster/static/css/main.92126411.css.map",
-    "main.5deb55a0.js.map": "/ShopFaster/static/js/main.5deb55a0.js.map"
+    "main.4939aeeb.js.map": "/ShopFaster/static/js/main.4939aeeb.js.map"
   },
   "entrypoints": [
     "static/css/main.92126411.css",
-    "static/js/main.5deb55a0.js"
+    "static/js/main.4939aeeb.js"
   ]
 }
