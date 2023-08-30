@@ -113,7 +113,7 @@ const SignUp = () => {
                     {errorPwd ? "Password*" : "Password"}
                   </Form.Label>
                   <Form.Control
-                    type="text"
+                    type="password"
                     className={errorPwd ? "border-danger" : ""}
                     placeholder="Password"
                     required
@@ -138,7 +138,7 @@ const SignUp = () => {
                       : "Confirm Password "}
                   </Form.Label>
                   <Form.Control
-                    type="text"
+                    type="password"
                     placeholder="Confirm Password"
                     required
                     value={confirmPwd}
